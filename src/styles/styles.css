@@ -1,0 +1,23 @@
+.posts-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .post-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+  }
+  
+  @media (min-width: 768px) {
+    .post-card {
+      width: 45%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .post-card {
+      width: 30%;
+    }
+  }
+  

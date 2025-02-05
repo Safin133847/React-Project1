@@ -1,0 +1,131 @@
+ body {
+    background-color: #000; 
+    color: #FFFFFF;
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .post-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .post-card {
+    width: 30%;
+    background-color: #000; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .post-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .post-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .post-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+    text-align: center;
+  }
+  
+  .post-description {
+    font-size: 14px;
+    color: #555;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .read-more {
+    font-size: 12px;
+    color: #0066cc;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .post-card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .post-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
+.section-image {
+    width:100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .posts-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+  }
+  
+  .post-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .section-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .heading {
+    font-size: 20px;
+    margin: 20px 0; 
+    padding-left: 20px; 
+  }
+
+  .divider {
+    border: none;
+    height: 1px; 
+    background-color: #FFFFFF;
+    margin: 20px 20;
+  }
+  
+  @media (max-width: 1200px) {
+    .posts-list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .posts-list {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .posts-list {
+      grid-template-columns: 1fr; 
+    }
+  }
+  
